@@ -1,4 +1,5 @@
 ﻿using System;
+using Amazon.Runtime;
 using Amazon.S3;
 using Amazon.S3.Model;
 
@@ -12,7 +13,7 @@ namespace AmazonS3Demo
 
         public void UploadFile()
         {
-            var client = new AmazonS3Client(Amazon.RegionEndpoint.USEast2);
+            var client = new AmazonS3Client("AKIAIE2V63W4AYEBTQPQ", "", Amazon.RegionEndpoint.USEast2);
 
             try
             {
